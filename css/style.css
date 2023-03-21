@@ -13,16 +13,78 @@
     color: var(--main-color);
 }
 
-body {
+.body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 50px;   
     box-sizing: border-box;
+}
+
+/*********header**************/
+.booki{
+    width: 61.09px;
+    height: 19px;
+    padding-top: 30px;
+}
+
+.lien1 { 
+    position: absolute;
+    width: 112px;
+    height: 19px;
+    left: 1146px;
+    top: 16px;
+}
+
+.lien2 {
+    position: absolute;
+    width: 63px;
+    height: 19px;
+    left: 1327px;
+    top: 16px;
+}
+
+.liensHighLight:hover {
+    padding-top: 14px;
+    color: #0065FC;
+}
+
+.barreLiens:hover{
+    position: absolute;
+    top:0px;
+    border-top: 2px #0065FC solid;
+    color: #0065FC;
+}
+
+.titleReve{
+    margin-top: 60px;
+}
+
+.titleLieux{
+    padding-top: 34px;
+}
+
+.button {
+
+}
+
+.buttonIcone{
+    background: #F2F2F2;
+    width: 50px;
+    height: 49px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid #F2F2F2;
+border-radius: 15px 0px 0px 15px;
+
+}
+.buttonLieux{
+
 }
 
 .section-title {
@@ -116,7 +178,7 @@ body {
     margin-bottom: 5px;
 }
 
-
+/***************activites****************/
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
