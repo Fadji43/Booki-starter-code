@@ -326,7 +326,6 @@ form {
     flex-direction: column;
     flex: 25% 1 1;
     aspect-ratio: 1.2;
-    padding-bottom: 10px;
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -343,12 +342,8 @@ form {
     border-top-left-radius: 20px;   
 }
  .activity-photo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin-left: 19px;
     margin-right: 10px;
-    font-weight: bold;
  }
 
 /******************footer***********************/
@@ -370,13 +365,6 @@ footer {
 .footerTitle{
     display: flex;
     font-size: 18px;
-}
-.footer-container {
-    width: 100%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
 }
 
 .footer-txt {
@@ -435,7 +423,7 @@ footer {
         display: flex;
         flex-wrap: nowrap;
         max-width: 100%;
-        margin: 50px;
+
     }
     .activity-cards .cards {
         width: 25%;
@@ -445,8 +433,9 @@ footer {
     }
     
     .activity-cards img {
-        width: 100%;
-        max-height: 200px;
+        object-fit: cover;
+        max-width: 100%;
+        height: 200px;
     }
 }
 
@@ -541,19 +530,7 @@ footer {
         flex-direction: column;
         background-color: white;  
     }
-    .card-orderPort{
-        display: flex; 
-        order: 1;
-    }
-    .card-orderAmina{
-        display: flex;
-        order: 6;
-    }
-    
-    .card-orderCanebiere{
-        display: flex;
-        order: 2;
-    }
+   
     .populaires {
         display: flex;
         flex-direction: column;
@@ -587,6 +564,7 @@ footer {
         display: flex;
         flex-direction: column;
         max-width: 100%;
+        height: 80%;
     }
 
     .activity-cards .cards {
@@ -598,16 +576,11 @@ footer {
         justify-content: space-between;
     }
     .activity-cards img {
-        max-width: 100%;
-        height: 80%;
+        width: 100%;
+        max-height: 100%;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
     }
-
-    .activity-photo {
-       display: flex;
-       align-items: center;
-     }
     
     footer {
         display: flex; 
