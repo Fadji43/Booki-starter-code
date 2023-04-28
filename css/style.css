@@ -99,11 +99,13 @@ nav{
 form {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 377px;
     height: 49px;
     border: 1px solid #F2F2F2;
-    border-radius: 15px;
-    aspect-ratio: 1;
+    border-radius: 15px; 
+    margin-bottom: 20px;
 }
 
 .formulaireIcone {
@@ -117,28 +119,8 @@ form {
     align-items: center;
 }
 
-.formulaireText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.formulaireVille {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 195px;
-    height: 50px;
-    box-sizing: content-box;
-    font-weight: bold;
-}
 .buttonRecherche { 
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
     height: 49px;
     border-radius: 0px 15px 15px 0px;
@@ -150,8 +132,7 @@ form {
 
 .whiteRecherche {
     color: white;
-    font-weight: bold;
-    
+    font-weight: bold;  
 }
 
 .loupe {
@@ -424,7 +405,7 @@ footer {
         font-size: 13px;
     }
 
-    /***************ctivites****************/
+    /***************activites****************/
     .activity-cards {
         display: flex;
         flex-wrap: nowrap;
@@ -493,21 +474,24 @@ footer {
     .intro {
         padding: 0 20px;
     }
+
 /***************formulaire****************/    
     .form{
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
         width: 100%;
     }
 
+    .buttonRecherche{
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        justify-content: flex-end;
+    }
     .whiteRecherche {
         display: none;
     }
     
     .loupe {
         display: contents;
-        justify-content: flex-end;
 
     }
 /***************filtres****************/    
@@ -527,11 +511,12 @@ footer {
         font-size: 14px;
     } 
 
-/***************herbegements****************/
+/***************herbegements et populaires****************/
     .hebergements-and-populaires {
         flex-direction: column-reverse;   
     }
-
+    
+/***************herbegements****************/
     .hebergements {
         width: 100%; 
         display: flex;
@@ -601,7 +586,8 @@ footer {
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
     }
-    
+
+/***************footer****************/
     footer {
         display: flex; 
         flex-direction: column;
